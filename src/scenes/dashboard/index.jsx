@@ -21,7 +21,7 @@ const Dashboard = () => {
     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
-        <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
+        <Header title="EMPLOYEE MANAGEMENT SYSTEM" subtitle="Welcome to your dashboard" />
 
         <Box>
           <Button
@@ -75,7 +75,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="431,225"
-            subtitle="Sales Obtained"
+            subtitle="Title deeds obtained"
             progress="0.50"
             increase="+21%"
             icon={
@@ -94,7 +94,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="32,441"
-            subtitle="New Clients"
+            subtitle="New Employess"
             progress="0.30"
             increase="+5%"
             icon={
@@ -113,7 +113,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="1,325,134"
-            subtitle="Traffic Received"
+            subtitle="Title deeds Received"
             progress="0.80"
             increase="+43%"
             icon={
@@ -143,14 +143,14 @@ const Dashboard = () => {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Revenue Generated
+                current pending title deeds cases
               </Typography>
               <Typography
                 variant="h3"
                 fontWeight="bold"
                 color={colors.greenAccent[500]}
               >
-                $59,342.32
+                59
               </Typography>
             </Box>
             <Box>
@@ -162,7 +162,7 @@ const Dashboard = () => {
             </Box>
           </Box>
           <Box height="250px" m="-20px 0 0 0">
-            <LineChart isDashboard={true} />
+            
           </Box>
         </Box>
         <Box
@@ -180,7 +180,7 @@ const Dashboard = () => {
             p="15px"
           >
             <Typography color={colors.grey[100]} variant="h5" fontWeight="600">
-              Recent Transactions
+              Recent dispatched titles
             </Typography>
           </Box>
           {mockTransactions.map((transaction, i) => (
@@ -210,7 +210,7 @@ const Dashboard = () => {
                 p="5px 10px"
                 borderRadius="4px"
               >
-                ${transaction.cost}
+                ksh{transaction.cost}
               </Box>
             </Box>
           ))}
@@ -224,7 +224,7 @@ const Dashboard = () => {
           p="30px"
         >
           <Typography variant="h5" fontWeight="600">
-            Campaign
+            land rent pending
           </Typography>
           <Box
             display="flex"
@@ -238,7 +238,7 @@ const Dashboard = () => {
               color={colors.greenAccent[500]}
               sx={{ mt: "15px" }}
             >
-              $48,352 revenue generated
+              ksh 48,352 
             </Typography>
             <Typography>Includes extra misc expenditures and costs</Typography>
           </Box>
@@ -253,7 +253,7 @@ const Dashboard = () => {
             fontWeight="600"
             sx={{ padding: "30px 30px 0 30px" }}
           >
-            Sales Quantity
+            lease Quantity
           </Typography>
           <Box height="250px" mt="-20px">
             <BarChart isDashboard={true} />
